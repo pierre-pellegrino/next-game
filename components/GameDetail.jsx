@@ -9,7 +9,8 @@ const GameDetail = ({id}) => {
   const [fetchedData, setFetchedData] = useState("");
 
   const getGameDetails = async () => {
-    const response = await fetch(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`)
+    // const response = await fetch(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`)
+    const response = await fetch(`https://api.rawg.io/api/games/${id}?key=${process.env.API_KEY}`)
     const gameDetails = await response.json();
 
     console.log(gameDetails)

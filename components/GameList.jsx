@@ -10,7 +10,8 @@ const GameList = () => {
   const [fetchedData, setFetchedData] = useState("");
 
   const fetchGameList = async () => {
-    let response = await fetch(`https://api.rawg.io/api/games?key=${API_KEY}&dates=2021-01-01,2022-10-10&ordering=-added`);
+    // let response = await fetch(`https://api.rawg.io/api/games?key=${API_KEY}&dates=2021-01-01,2022-10-10&ordering=-added`);
+    let response = await fetch(`https://api.rawg.io/api/games?key=${process.env.API_KEY}&dates=2021-01-01,2022-10-10&ordering=-added`);
     let gamesList = await response.json();
 
     setFetchedData(gamesList);
