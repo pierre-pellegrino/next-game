@@ -64,7 +64,7 @@ const GameDetail = ({id}) => {
         <div className="align-center" dangerouslySetInnerHTML={{__html: description}} />
 
         <h2 className="subtitle">Website</h2>
-        <p><a target="_blank" href={website}>{website}</a></p>
+        <p><a target="_blank" rel="noreferrer" href={website}>{website}</a></p>
       </div>
       </>
     );
