@@ -1,0 +1,84 @@
+.gameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  a {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.gameCard {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 8px 4px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 0 2em;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+
+  .imageWrapper {
+    width: calc(100% + 4em);
+    margin-left: -2em;
+    height: 350px;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 0 4px 4px;
+      -webkit-border-radius: 0 0 4px 4px;
+      -moz-border-radius: 0 0 4px 4px;
+      -ms-border-radius: 0 0 4px 4px;
+      -o-border-radius: 0 0 4px 4px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+  }
+}
+
+.rating {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 4px 0 50%;
+  -webkit-border-radius: 0 4px 0 50%;
+  -moz-border-radius: 0 4px 0 50%;
+  -ms-border-radius: 0 4px 0 50%;
+  -o-border-radius: 0 4px 0 50%;
+
+  &.bad {
+    background-color: red;
+  }
+
+  &.meh {
+    background-color: orange;
+  }
+
+  &.good {
+    background-color: green;
+  }
+}
