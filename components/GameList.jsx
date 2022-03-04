@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { API_KEY } from '../secret_keys';
+import { API_KEY } from '../secret_keys';
 import { Triangle } from  'react-loader-spinner';
 import GameCard from './GameCard';
 import styles from '../styles/gamecard.module.scss';

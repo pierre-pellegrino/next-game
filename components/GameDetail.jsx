@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { API_KEY } from '../secret_keys';
+import { API_KEY } from '../secret_keys';
 import { Triangle } from  'react-loader-spinner';
 import { gameDetailsWrapper, apiLoaderWrapper, gameDetailsPicture, genreCard } from '../styles/gamedetails.module.scss';
 import Head from "next/head";
